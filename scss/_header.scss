@@ -1,0 +1,147 @@
+header{
+	background-image : url(../img/header-bg.png);
+	background-size         : cover ;
+	background-repeat : no-repeat;
+	
+	
+	.head-top{
+		position : relative;
+		
+		.menu-toggle{
+			display : none;
+			
+			@media screen and (max-width: 768px) {
+				position : absolute;
+				top : 15px;
+				right : 15px;
+				display : block;
+				color : #fff;
+				font-size : 4.5rem;
+				line-height : 3rem;
+			}
+		}
+		.nav-menu{
+			margin : 0;
+			padding : 0;
+			list-style: none;
+			margin-top : 90px;
+			
+			@media screen and (max-width: 768px) {
+				display : none;
+				opacity: 0;
+				width : 100%;
+				position : absolute;
+				right : 18px;
+				top : -25px;
+				z-index : 99;
+			}
+			
+			li{
+				display : inline-block;
+				font-weight : 900;
+				font-size : 1.4rem;
+				line-height : 2.1rem;
+				color : #FFFFFF;
+				text-transform : uppercase;
+				margin-left: 18px;
+				
+				@media screen and (max-width: 1200px) {
+					margin-left : 6px;
+				}
+				
+				@media screen and (max-width: 992px) {
+					margin-left : 18px;
+				}
+				
+				@media screen and (max-width: 768px) {
+					display : block;
+					width : 100%;
+					padding : 10px;
+					text-align : center;
+					background : #f2385a;
+					color : #fff;
+					border-bottom :1px solid #fff;
+				}
+				
+				a{
+					display : block;
+					width : 100%;
+					height : 100%;
+					
+					border :2px solid transparent;
+					
+					&:hover{
+						color : inherit;
+						border-bottom : 2px solid #fff;
+						text-decoration : none;
+						
+						@media screen and (max-width: 992px) {
+							color : #fff;
+							border-bottom :2px solid transparent;
+							
+						}
+					}
+				}
+			}
+		}
+		
+		
+	}
+	.head-bottom{
+		
+		.logo{
+			margin-top : 275px;
+			font-family : "Myriad Pro", sans-serif;
+			font-size   : 5.5rem;
+			line-height : 2.2rem;
+			color       : #fff;
+			text-align : center;
+			margin-bottom : 80px;
+		}
+		
+		.link{
+			font-weight :100;
+			font-size : 2.4rem;
+			line-height : 1.9rem;
+			color : #fff;
+			background : #F2385A;
+			text-align : center;
+			border-radius: 30px;
+			border :1px solid transparent;
+			margin-bottom : 225px;
+			
+			@media screen and (max-width: 1200px) {
+				font-size : 1.8rem;
+					
+			}
+			
+			&:hover{
+				border :1px solid #F2385A;
+				background : rgba( 242, 56, 90, .5);
+				
+				@media screen and (max-width: 992px) {
+					border :1px solid transparent;
+					background : #F2385A;
+					
+				}
+			}
+			
+			a{
+				display : block;
+				padding :20px 60px;
+				
+				&:hover{
+					text-decoration : none;
+					color: inherit;
+				}
+				
+				&:focus{
+					text-decoration : none;
+					color: inherit;
+				}
+			}
+		}
+		
+		
+	}
+}
